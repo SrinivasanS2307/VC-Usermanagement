@@ -15,6 +15,21 @@
           "y": 60
         },
         "type": "ia.display.alarmjournaltable"
+      },
+      {
+        "meta": {
+          "name": "Dashboard"
+        },
+        "position": {
+          "height": 509,
+          "rotate": {
+            "anchor": "69% 38%"
+          },
+          "width": 400,
+          "x": 183,
+          "y": 198
+        },
+        "type": "ia.display.dashboard"
       }
     ],
     "meta": {
