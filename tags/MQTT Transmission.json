@@ -1,0 +1,333 @@
+{
+  "name": "",
+  "tagType": "Provider",
+  "tags": [
+    {
+      "name": "Transmission Info",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Redundancy State",
+          "tagType": "AtomicTag",
+          "value": "Active"
+        },
+        {
+          "name": "Transmitters",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "UDT_TESTING",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "UDTGROUP",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "U122",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Example Transmitter",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "My MQTT Group",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "Edge Node 0c5db7",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LMW_UNS",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Tenant-TNT062818724dae58108",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "SubTenant-BSN0634182122e885360",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "New Transmitter",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "line1",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "plc-1",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TESTING_UNS",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "LMW",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "Cylindrical",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "Enable Tag Tracking",
+                              "tagType": "AtomicTag",
+                              "value": 0
+                            },
+                            {
+                              "accessRights": "Read_Only",
+                              "dataType": "Int8",
+                              "enabled": true,
+                              "name": "Total Mesg Xmit",
+                              "tagType": "AtomicTag",
+                              "value": 2
+                            },
+                            {
+                              "accessRights": "Read_Only",
+                              "dataType": "Int8",
+                              "enabled": true,
+                              "name": "Total Bytes Xmit",
+                              "tagType": "AtomicTag",
+                              "value": 1317
+                            },
+                            {
+                              "name": "Tags Per Second",
+                              "tagType": "AtomicTag",
+                              "value": 0
+                            },
+                            {
+                              "accessRights": "Read_Write",
+                              "dataType": "Boolean",
+                              "enabled": true,
+                              "name": "Reset Metrics",
+                              "tagType": "AtomicTag",
+                              "value": false
+                            },
+                            {
+                              "name": "Tag Count",
+                              "tagType": "AtomicTag",
+                              "value": 7
+                            },
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder",
+                              "tags": [
+                                {
+                                  "name": "Online DateTime",
+                                  "tagType": "AtomicTag",
+                                  "value": 1741180643389
+                                },
+                                {
+                                  "name": "Enable Latency Check",
+                                  "tagType": "AtomicTag",
+                                  "value": false
+                                },
+                                {
+                                  "name": "Online",
+                                  "tagType": "AtomicTag",
+                                  "value": true
+                                },
+                                {
+                                  "name": "Primary Host ID",
+                                  "tagType": "AtomicTag"
+                                },
+                                {
+                                  "name": "Target Server URL",
+                                  "tagType": "AtomicTag",
+                                  "value": "tcp://10.20.32.132:1883"
+                                },
+                                {
+                                  "name": "Offline DateTime",
+                                  "tagType": "AtomicTag",
+                                  "value": 1741180642362
+                                },
+                                {
+                                  "name": "MQTT Client ID",
+                                  "tagType": "AtomicTag",
+                                  "value": "MT-8ba71dbf-fcf4-4803"
+                                },
+                                {
+                                  "name": "Command Latency",
+                                  "tagType": "AtomicTag",
+                                  "value": -1
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Refresh Edge Node",
+                              "tagType": "AtomicTag",
+                              "value": false
+                            },
+                            {
+                              "accessRights": "Read_Only",
+                              "dataType": "DateTime",
+                              "enabled": true,
+                              "name": "Largest Mesg Xmit Timestamp",
+                              "tagType": "AtomicTag",
+                              "value": 1741180643410
+                            },
+                            {
+                              "accessRights": "Read_Only",
+                              "dataType": "Int8",
+                              "enabled": true,
+                              "name": "Largest Mesg Xmit",
+                              "tagType": "AtomicTag",
+                              "value": 887
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "UNS_EMQXX",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Edge Nodes",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "U12",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "COTS_APRONS",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "name": "MQTT Client",
+                              "tagType": "Folder"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Refresh Required",
+          "tagType": "AtomicTag",
+          "value": false
+        },
+        {
+          "name": "Version",
+          "tagType": "AtomicTag",
+          "value": "4.0.21 (b2024012622)"
+        },
+        {
+          "name": "Redundancy Role",
+          "tagType": "AtomicTag",
+          "value": "Independent"
+        }
+      ]
+    },
+    {
+      "name": "Transmission Control",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Discover Edge Nodes Required",
+          "tagType": "AtomicTag",
+          "value": false
+        },
+        {
+          "name": "Discover Edge Nodes",
+          "tagType": "AtomicTag",
+          "value": false
+        },
+        {
+          "name": "Last Refresh",
+          "tagType": "AtomicTag",
+          "value": 1740993350331
+        },
+        {
+          "name": "Refresh",
+          "tagType": "AtomicTag",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

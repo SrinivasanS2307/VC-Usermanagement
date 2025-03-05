@@ -1,0 +1,228 @@
+{
+  "name": "",
+  "tagType": "Provider",
+  "tags": [
+    {
+      "name": "CPU Percentage",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "LastValue",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Disk Usage Percentage",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "LastValue",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Uptime",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "LastValue",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "OEE Manager",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "updateReferencesToProcessSegment",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "6c425178-e344-477a-92a9-fb8f4bcb5ee7",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "LastValue",
+                  "tagType": "AtomicTag"
+                }
+              ]
+            },
+            {
+              "name": "9dbe639c-899a-4301-9648-9409751b2db8",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "LastValue",
+                  "tagType": "AtomicTag"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Schedule",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Pending Entries",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MESObjectManager",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "saveMESObject",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Execution Time",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Throughput",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Latency",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MESObjectCache",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Cache Miss",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Cache Hit",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Maximum Size",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Current Size",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Live Analysis",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Count",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Operations",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Active",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "LastValue",
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Memory Percentage",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "LastValue",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "_types_",
+      "tagType": "Folder"
+    }
+  ]
+}

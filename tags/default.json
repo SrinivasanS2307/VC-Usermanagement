@@ -1,0 +1,2712 @@
+{
+  "name": "",
+  "tagType": "Provider",
+  "tags": [
+    {
+      "name": "PMSTAGS",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Total_Count",
+          "tagType": "AtomicTag",
+          "value": 19271,
+          "valueSource": "memory"
+        },
+        {
+          "dataType": "Float4",
+          "expression": "({[.]Good_Count}/{[.]Total_Count})",
+          "name": "OverallOEEQua",
+          "tagType": "AtomicTag",
+          "valueSource": "expr"
+        },
+        {
+          "name": "StopTime",
+          "tagType": "AtomicTag",
+          "value": 0,
+          "valueSource": "memory"
+        },
+        {
+          "name": "Target_Count",
+          "tagType": "AtomicTag",
+          "value": 2520,
+          "valueSource": "memory"
+        },
+        {
+          "name": "Ideal_Cycle_Time",
+          "tagType": "AtomicTag",
+          "value": 1,
+          "valueSource": "memory"
+        },
+        {
+          "name": "Rejection_Count",
+          "tagType": "AtomicTag",
+          "value": 423,
+          "valueSource": "memory"
+        },
+        {
+          "dataType": "Float4",
+          "expression": "{[.]Run_Time}/{[.]PPT}\r\n",
+          "name": "Overall_OEE_AVAI",
+          "tagType": "AtomicTag",
+          "valueSource": "expr"
+        },
+        {
+          "name": "Good_Count",
+          "tagType": "AtomicTag",
+          "value": 18848,
+          "valueSource": "memory"
+        },
+        {
+          "dataType": "Float4",
+          "name": "1_EM1",
+          "opcItemPath": "ns\u003d1;s\u003d[EMS]1.EM1",
+          "opcServer": "Ignition OPC UA Server",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Run_Time",
+          "tagType": "AtomicTag",
+          "value": 373,
+          "valueSource": "memory"
+        },
+        {
+          "dataType": "Float4",
+          "expression": "({[.]Ideal_Cycle_Time}*{[.]Total_Count})/({[.]Run_Time}*60)",
+          "name": "OverallOEE_Perf",
+          "tagType": "AtomicTag",
+          "valueSource": "expr"
+        },
+        {
+          "name": "PPT",
+          "tagType": "AtomicTag",
+          "value": 420,
+          "valueSource": "memory"
+        },
+        {
+          "dataType": "String",
+          "name": "Machine_Status",
+          "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1014",
+          "opcServer": "SimulationServer@PT-LP-0053",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        }
+      ]
+    },
+    {
+      "name": "Sensor 4",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 13
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "name": "Sensor 7",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 16
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "name": "Sensor 8",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 17
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "name": "Refrigeration",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Compressor2",
+          "parameters": {
+            "CompressorNumber": {
+              "dataType": "String",
+              "value": "2"
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtInstance",
+          "tags": [
+            {
+              "name": "CompressorNumber",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "hoa",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "pressureDischarge",
+              "tagType": "AtomicTag"
+            }
+          ],
+          "typeId": "Compressor",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "DriverName": "",
+          "dataType": "Int4",
+          "enabled": true,
+          "historyEnabled": false,
+          "historyProvider": "DB",
+          "name": "Accumulator Level",
+          "opcItemPath": "ns\u003d1;s\u003d[TroubleshootingSimulator]_Meta:Refrigeration/accumulatorLevel",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Tower2",
+          "parameters": {
+            "TowerNumber": {
+              "dataType": "String",
+              "value": "2"
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtInstance",
+          "tags": [
+            {
+              "name": "temp",
+              "tagType": "AtomicTag"
+            },
+            {
+              "clampMode": "No_Clamp",
+              "name": "pH",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "hiSP",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "TowerNumber",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "makeup",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "mmOH",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "fanSpeed",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "lowSP",
+              "tagType": "AtomicTag",
+              "value": 50
+            },
+            {
+              "name": "Pumps",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "chemHOA",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "circHOA",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "bromineHOA",
+                  "tagType": "AtomicTag"
+                }
+              ]
+            }
+          ],
+          "typeId": "Tower",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "DriverName": "",
+          "dataType": "Int4",
+          "enabled": true,
+          "name": "Receiver Level",
+          "opcItemPath": "[TroubleshootingSimulator]_Meta:Refrigeration/receiverLevel",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "DriverName": "",
+          "dataType": "Float4",
+          "enabled": true,
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "Ambient Temp",
+          "opcItemPath": "[TroubleshootingSimulator]_Meta:Refrigeration/ambientTemp",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "AlarmDisplayPath": "",
+          "DriverName": "",
+          "HistoryMaxAgeMode": 1.0,
+          "alarms": [
+            {
+              "displayPath": {
+                "bindType": "Expression",
+                "value": "\"King Valve \"+\r\nif({Value},\r\n\t\"Open\",\r\n\t\"Close\")"
+              },
+              "mode": "AnyChange",
+              "name": "Valve Change",
+              "setpointA": 0.0
+            }
+          ],
+          "dataType": "Int4",
+          "enabled": true,
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tsystem.tag.write(\"[.]Accumulator Running\", currentValue)"
+            }
+          ],
+          "historicalDeadbandStyle": "Discrete",
+          "historyEnabled": true,
+          "historyMaxAge": 1,
+          "historyProvider": "COREMYSQLDB",
+          "historyTagGroup": "",
+          "name": "valveKing",
+          "opcItemPath": "ns\u003d1;s\u003d[TroubleshootingSimulator]_Meta:Refrigeration/valveKing",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Tower1",
+          "parameters": {
+            "TowerNumber": {
+              "dataType": "String",
+              "value": "1"
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtInstance",
+          "tags": [
+            {
+              "dataType": "Int2",
+              "name": "hiSP",
+              "tagType": "AtomicTag",
+              "value": 200
+            },
+            {
+              "name": "pH",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "TowerNumber",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "temp",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "lowSP",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "fanSpeed",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "makeup",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "Pumps",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "chemHOA",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "bromineHOA",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "circHOA",
+                  "tagType": "AtomicTag"
+                }
+              ]
+            },
+            {
+              "name": "mmOH",
+              "tagType": "AtomicTag"
+            }
+          ],
+          "typeId": "Tower",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "DriverName": "",
+          "dataType": "Float4",
+          "enabled": true,
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "Ambient Hum",
+          "opcItemPath": "[TroubleshootingSimulator]_Meta:Refrigeration/ambientHum",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "dataType": "Boolean",
+          "enabled": true,
+          "name": "Accumulator Running",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "value": true,
+          "valueSource": "memory",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "DriverName": "",
+          "HistoryMaxAgeMode": 1.0,
+          "alarms": [
+            {
+              "activeCondition": true,
+              "displayPath": {
+                "bindType": "Expression",
+                "value": "\"Discharge Valve \"+\r\nif({Value},\r\n\"Open\",\"Close\")"
+              },
+              "mode": "OnCondition",
+              "name": "Valve Change",
+              "setpointA": 0.0
+            }
+          ],
+          "dataType": "Int4",
+          "enabled": true,
+          "historicalDeadbandStyle": "Discrete",
+          "historyEnabled": true,
+          "historyMaxAge": 1,
+          "historyProvider": "COREMYSQLDB",
+          "historyTagGroup": "",
+          "name": "valveDischarge",
+          "opcItemPath": "[TroubleshootingSimulator]_Meta:Refrigeration/valveDischarge",
+          "opcServer": "Ignition OPC UA Server",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "valueSource": "opc",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Compressor1",
+          "parameters": {
+            "CompressorNumber": {
+              "dataType": "String",
+              "value": "1"
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtInstance",
+          "tags": [
+            {
+              "name": "hoa",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "pressureDischarge",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "CompressorNumber",
+              "tagType": "AtomicTag"
+            }
+          ],
+          "typeId": "Compressor",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "Fan Speed": 20.0,
+          "alarms": [
+            {
+              "activeCondition": {
+                "bindType": "Expression",
+                "value": "{[~]Refrigeration/Fan Status}\u003d0 \u0026\u0026 {[~]Refrigeration/Fan Status.Fan Speed}\u003e0"
+              },
+              "displayPath": {
+                "bindType": "Expression",
+                "value": "\"Fan Fault, Speed: \"+{[~]Refrigeration/Fan Status.Fan Speed}"
+              },
+              "label": "",
+              "mode": "OnCondition",
+              "name": "Fan Fault"
+            }
+          ],
+          "dataType": "Int4",
+          "enabled": true,
+          "name": "Fan Status",
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "AtomicTag",
+          "value": 0,
+          "valueSource": "memory",
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sensor 5",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 14
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag",
+          "value": 75
+        },
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "dataType": "DateTime",
+      "expression": "now()",
+      "formatString": "yyyy-MM-dd h:mm:ss aa",
+      "name": "dater9me",
+      "tagType": "AtomicTag",
+      "valueSource": "expr"
+    },
+    {
+      "name": "Sensor 10",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 19
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag",
+          "value": 87
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "dataType": "Float4",
+      "historyEnabled": true,
+      "historyProvider": "COREMYSQLDB",
+      "name": "Current",
+      "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1016",
+      "opcServer": "SimulationServer@PT-LP-0053",
+      "tagType": "AtomicTag",
+      "valueSource": "opc"
+    },
+    {
+      "name": "_types_",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Sensor",
+          "parameters": {
+            "SensorNumber": {
+              "dataType": "Integer",
+              "value": 0
+            }
+          },
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "alarms": [
+                {
+                  "displayPath": {
+                    "bindType": "Expression",
+                    "value": "\"Sensor \"+{SensorNumber}+\"Faulted\""
+                  },
+                  "label": "",
+                  "name": "Calibrate Mode",
+                  "setpointA": 2.0
+                }
+              ],
+              "dataType": "Int2",
+              "historyEnabled": true,
+              "historyProvider": "COREMYSQLDB",
+              "name": "Modetag",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "ns\u003d1;s\u003d[CoreSim]N7/N7:{SensorNumber}"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "tagType": "AtomicTag",
+              "valueSource": "opc"
+            },
+            {
+              "dataType": "String",
+              "expression": "\"Sensor \" + ({SensorNumber} - 9)\r\n",
+              "name": "Name",
+              "tagType": "AtomicTag",
+              "valueSource": "expr"
+            },
+            {
+              "historyEnabled": true,
+              "historyProvider": "COREMYSQLDB",
+              "name": "Lowsp",
+              "tagType": "AtomicTag",
+              "value": 0,
+              "valueSource": "memory"
+            },
+            {
+              "historyEnabled": true,
+              "historyProvider": "COREMYSQLDB",
+              "name": "Highsp",
+              "tagType": "AtomicTag",
+              "value": 75,
+              "valueSource": "memory"
+            },
+            {
+              "alarms": [
+                {
+                  "displayPath": {
+                    "bindType": "Expression",
+                    "value": "\"Sensor \"+({SensorNumber}-9)+\" Low Alarm\""
+                  },
+                  "mode": "BelowValue",
+                  "name": "Low Reading Alarm",
+                  "setpointA": {
+                    "bindType": "Tag",
+                    "value": "[.]Lowsp"
+                  }
+                },
+                {
+                  "displayPath": {
+                    "bindType": "Expression",
+                    "value": "\"Sensor \"+({SensorNumber}-9)+\" High Alarm\""
+                  },
+                  "mode": "AboveValue",
+                  "name": "High Reading Alarm",
+                  "priority": "Low",
+                  "setpointA": {
+                    "bindType": "Tag",
+                    "value": "[.]Highsp"
+                  }
+                }
+              ],
+              "dataType": "Float8",
+              "historyEnabled": true,
+              "historyProvider": "COREMYSQLDB",
+              "name": "Readingtag",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "ns\u003d1;s\u003d[CoreSim]F8/F8:{SensorNumber}"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "tagType": "AtomicTag",
+              "valueSource": "opc"
+            }
+          ],
+          "typeId": ""
+        },
+        {
+          "name": "Water",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "Exchange",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "WaterPack",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "SetpointValue",
+                      "parameters": {
+                        "historyEnable": {
+                          "dataType": "Integer",
+                          "value": 0
+                        },
+                        "units": {
+                          "dataType": "String",
+                          "value": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          }
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "dataType": "Float4",
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "name": "Value",
+                          "tagType": "AtomicTag",
+                          "value": 0.0,
+                          "valueSource": "memory"
+                        }
+                      ],
+                      "typeColor": -3342337
+                    },
+                    {
+                      "name": "StandardPump",
+                      "parameters": {
+                        "units": {
+                          "dataType": "String"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "State",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "dataType": "Float4",
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "expression": "case({[.]Mode}\n\t, 0, 0.0 // Off\n\t, 1, tag({path}) // Auto\n\t, 2, 0.0 // Hand\n\t, 3, -1.0 // Faulted\n\t, 0.0 // Fallback\n)",
+                          "name": "Flow",
+                          "sourceTagPath": {
+                            "bindType": "parameter",
+                            "binding": "{path}"
+                          },
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "Name",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "ModeName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        },
+                        {
+                          "name": "StateName",
+                          "tagType": "AtomicTag"
+                        }
+                      ],
+                      "typeColor": -30070,
+                      "typeId": "Exchange/WaterPack/HOA"
+                    },
+                    {
+                      "name": "StandardFilter",
+                      "parameters": {
+                        "units": {
+                          "dataType": "String",
+                          "value": " "
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "name": "State",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "alarms": [
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "AboveValue",
+                              "name": "High Level",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/HighLevel/Value"
+                              }
+                            },
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "BelowValue",
+                              "name": "Low Level",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/LowLevel/Value"
+                              }
+                            }
+                          ],
+                          "dataType": "Float8",
+                          "name": "Level",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "Name",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        },
+                        {
+                          "expression": "case({[.]State}\n\t, 0, \u0027Stopped\u0027\n\t, 1, \u0027Filtering\u0027\n\t, 2, \u0027Faulted\u0027\n\t, 3, \u0027Backwashing\u0027\n\t, \u0027Error\u0027\n)",
+                          "name": "StateName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "alarms": [
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "AboveValue",
+                              "name": "High Turbidity",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/HighTurbidity/Value"
+                              }
+                            },
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "BelowValue",
+                              "name": "Low Turbidity",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/LowTurbidity/Value"
+                              }
+                            }
+                          ],
+                          "dataType": "Float8",
+                          "engUnit": "ntu",
+                          "name": "Turbidity",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "alarms": [
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "BelowValue",
+                              "name": "Low Loss of Head",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/LowLossOfHead/Value"
+                              }
+                            },
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "AboveValue",
+                              "name": "High Loss of Head",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/HighLossOfHead/Value"
+                              }
+                            }
+                          ],
+                          "dataType": "Float8",
+                          "name": "LossOfHead",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "ModeName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "alarms": [
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "AboveValue",
+                              "name": "High Flow",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/HighFlow/Value"
+                              }
+                            },
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "BelowValue",
+                              "name": "Low Flow",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardFilter/Setpoints/LowFlow/Value"
+                              }
+                            }
+                          ],
+                          "dataType": "Float8",
+                          "name": "Flow",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        }
+                      ],
+                      "typeColor": -29953,
+                      "typeId": "Exchange/WaterPack/HOA"
+                    },
+                    {
+                      "name": "Valve",
+                      "parameters": {
+                        "units": {
+                          "dataType": "String"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        },
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Name",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "ModeName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "State",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "expression": "case({[.]State}\n\t, 0, \u0027Closed\u0027\n\t, 1, \u0027Open\u0027\n\t, 2, \u0027Failed To Close\u0027\n\t, 3, \u0027Failed To Open\u0027\n\t, \u0027Error\u0027\n)",
+                          "name": "StateName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "dataType": "Float4",
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "expression": "case({[.]Mode}\n\t, 0, 0.0 // Off\n\t, 1, tag({path}) // Auto\n\t, 2, 0.0 // Hand\n\t, 3, -1.0 // Faulted\n\t, 0.0 // Fallback\n)",
+                          "name": "FillPercent",
+                          "sourceTagPath": {
+                            "bindType": "parameter",
+                            "binding": "{path}"
+                          },
+                          "tagType": "AtomicTag",
+                          "value": 100.0,
+                          "valueSource": "opc"
+                        }
+                      ],
+                      "typeColor": -47289,
+                      "typeId": "Exchange/WaterPack/HOA"
+                    },
+                    {
+                      "name": "PeristalticPump",
+                      "parameters": {
+                        "units": {
+                          "dataType": "String"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "dataType": "Float4",
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "expression": "case({[.]Mode}\n\t, 0, 0.0 // Off\n\t, 1, tag({path}) // Auto\n\t, 2, 0.0 // Hand\n\t, 3, -1.0 // Faulted\n\t, 0.0 // Fallback\n)",
+                          "name": "Flow",
+                          "sourceTagPath": {
+                            "bindType": "parameter",
+                            "binding": "{path}"
+                          },
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "ModeName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "StateName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Name",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "State",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        }
+                      ],
+                      "typeColor": -16721447,
+                      "typeId": "Water/Exchange/WaterPack/PeristalticPump"
+                    },
+                    {
+                      "name": "VFDPump",
+                      "parameters": {
+                        "maxSpeed": {
+                          "dataType": "Float",
+                          "value": 60.0
+                        },
+                        "minSpeed": {
+                          "dataType": "Float",
+                          "value": 0.0
+                        },
+                        "units": {
+                          "dataType": "String",
+                          "value": "hz"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        },
+                        {
+                          "name": "State",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "engHigh": {
+                            "bindType": "parameter",
+                            "binding": "{maxSpeed}"
+                          },
+                          "engLimitMode": "Clamp_Both",
+                          "engLow": {
+                            "bindType": "parameter",
+                            "binding": "{minSpeed}"
+                          },
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "name": "Speed",
+                          "tagType": "AtomicTag",
+                          "value": 60,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "ModeName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Name",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "StateName",
+                          "tagType": "AtomicTag"
+                        },
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag"
+                        }
+                      ],
+                      "typeColor": -7667830,
+                      "typeId": "Exchange/WaterPack/HOA"
+                    },
+                    {
+                      "name": "HOA",
+                      "parameters": {
+                        "name": {
+                          "dataType": "String"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "dataType": "String",
+                          "expression": "case({[.]State}\n\t, 0, \u0027Off\u0027\n\t, 1, \u0027Running\u0027\n\t, 2, \u0027Faulted\u0027\n\t, \u0027Error\u0027\n)",
+                          "name": "StateName",
+                          "tagType": "AtomicTag",
+                          "valueSource": "expr"
+                        },
+                        {
+                          "dataType": "Int4",
+                          "expression": "0",
+                          "name": "State",
+                          "tagType": "AtomicTag",
+                          "value": 0,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "dataType": "String",
+                          "expression": "coalesce({name}, {RootInstanceName})",
+                          "name": "Name",
+                          "tagType": "AtomicTag",
+                          "valueSource": "expr"
+                        },
+                        {
+                          "dataType": "String",
+                          "expression": "case({[.]Mode}\n\t, 0, \u0027Off\u0027\n\t, 1, \u0027Auto\u0027\n\t, 2, \u0027Hand\u0027\n\t, \u0027Error\u0027\n)",
+                          "name": "ModeName",
+                          "tagType": "AtomicTag",
+                          "valueSource": "expr"
+                        },
+                        {
+                          "name": "Mode",
+                          "tagType": "AtomicTag",
+                          "value": 1,
+                          "valueSource": "opc"
+                        }
+                      ],
+                      "typeColor": -2763307
+                    },
+                    {
+                      "name": "StandardTank",
+                      "parameters": {
+                        "name": {
+                          "dataType": "String"
+                        },
+                        "units": {
+                          "dataType": "String"
+                        }
+                      },
+                      "tagType": "UdtType",
+                      "tags": [
+                        {
+                          "dataType": "Float4",
+                          "name": "Capacity",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "dataType": "Boolean",
+                          "name": "InService",
+                          "tagType": "AtomicTag",
+                          "value": true,
+                          "valueSource": "opc"
+                        },
+                        {
+                          "alarms": [
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "AboveValue",
+                              "name": "High Level",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardTank/Setpoints/HighLevel/Value"
+                              }
+                            },
+                            {
+                              "displayPath": {
+                                "bindType": "Expression",
+                                "value": "{InstanceName} + \" \" + {name}"
+                              },
+                              "mode": "BelowValue",
+                              "name": "Low Level",
+                              "setpointA": {
+                                "bindType": "Tag",
+                                "value": "[~]Exchange/WaterPack/Demo/StandardTank/Setpoints/LowLevel/Value"
+                              }
+                            }
+                          ],
+                          "dataType": "Float4",
+                          "engUnit": {
+                            "bindType": "parameter",
+                            "binding": "{units}"
+                          },
+                          "name": "Level",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "name": "Setpoints",
+                          "tagType": "Folder"
+                        },
+                        {
+                          "dataType": "String",
+                          "expression": "coalesce({name}, {RootInstanceName})",
+                          "name": "Name",
+                          "tagType": "AtomicTag",
+                          "valueSource": "expr"
+                        }
+                      ],
+                      "typeColor": -12105729
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Compressor",
+          "parameters": {
+            "CompressorNumber": {
+              "dataType": "String",
+              "value": ""
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "Location": "",
+              "dataType": "Int4",
+              "enabled": true,
+              "name": "hoa",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Compressor{CompressorNumber}/hoa"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "String",
+              "enabled": true,
+              "name": "CompressorNumber",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "value": {
+                "bindType": "parameter",
+                "binding": "{CompressorNumber}"
+              },
+              "valueSource": "memory",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Int4",
+              "enabled": true,
+              "name": "pressureDischarge",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Compressor{CompressorNumber}/pressureDischarge"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            }
+          ],
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "name": "CMMS",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "Equipment",
+              "tagType": "UdtType",
+              "tags": [
+                {
+                  "name": "Metrics",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Running",
+                      "tagType": "AtomicTag",
+                      "value": 0,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "name": "Downtime",
+                      "tagType": "AtomicTag",
+                      "value": 0,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "name": "Idle",
+                      "tagType": "AtomicTag",
+                      "value": 0,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "name": "Maintenance",
+                      "tagType": "AtomicTag",
+                      "value": 0,
+                      "valueSource": "memory"
+                    }
+                  ]
+                },
+                {
+                  "name": "StartTime",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "dataType": "DateTime",
+                      "formatString": "yyyy-MM-dd h:mm:ss aa",
+                      "name": "Downtime",
+                      "tagType": "AtomicTag",
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "DateTime",
+                      "formatString": "yyyy-MM-dd h:mm:ss aa",
+                      "name": "Idle",
+                      "tagType": "AtomicTag",
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "DateTime",
+                      "formatString": "yyyy-MM-dd h:mm:ss aa",
+                      "name": "Running",
+                      "tagType": "AtomicTag",
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "DateTime",
+                      "formatString": "yyyy-MM-dd h:mm:ss aa",
+                      "name": "Maintenance",
+                      "tagType": "AtomicTag",
+                      "valueSource": "memory"
+                    }
+                  ]
+                },
+                {
+                  "dataType": "Boolean",
+                  "eventScripts": [
+                    {
+                      "enabled": false,
+                      "eventid": "valueChanged",
+                      "script": "\tpass"
+                    }
+                  ],
+                  "expression": "if({[.]Status}\u003d\"Idle\", true\n\t, if({[.]Status}\u003d\"Running\", true\n\t\t, if({[.]Status}\u003d\"Maintenance\", true\n\t\t\t, if({[.]Status}\u003d\"Downtime\", true\n\t\t\t\t, false\n\t\t\t)\n\t\t)\n\t)\n)",
+                  "name": "ValidStatus",
+                  "tagType": "AtomicTag",
+                  "valueSource": "expr"
+                },
+                {
+                  "dataType": "String",
+                  "eventScripts": [
+                    {
+                      "eventid": "valueChanged",
+                      "script": "\t# Variables\n\tSTATUS \u003d [\u0027Idle\u0027, \u0027Running\u0027, \u0027Maintenance\u0027, \u0027Downtime\u0027]\n\tPATH \u003d \"[.]%s/%s\"\n\t\n\t# Check current value is valid\n\tif currentValue.value in STATUS:\n\t\t# Write current status start time\n\t\tsystem.tag.writeBlocking([PATH % (\u0027StartTime\u0027, currentValue.value)], [system.date.now()])\n\t\n\t# Check previous value is valid\n\tif previousValue.value in STATUS:\n\t\t# Calculate total metric time\n\t\tstartTime \u003d system.tag.readBlocking([PATH % (\u0027StartTime\u0027, previousValue.value)])[0].value\n\t\t\n\t\t# Calculate/Write total time if there is a start time\n\t\tif startTime:\n\t\t\tcurrentTime \u003d system.tag.readBlocking([PATH % (\u0027Metrics\u0027, previousValue.value)])[0].value\n\t\t\ttotalTime \u003d currentTime + system.date.secondsBetween(startTime, system.date.now())\n\t\t\tsystem.tag.writeBlocking([PATH % (\u0027Metrics\u0027, previousValue.value)], [totalTime])\n\t\t\t\n\t\t# Clear previous status start time\n\t\tsystem.tag.writeBlocking([PATH % (\u0027StartTime\u0027, previousValue.value)], [None])"
+                    }
+                  ],
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "value": "Idle",
+                  "valueSource": "memory"
+                }
+              ],
+              "typeColor": -47289
+            }
+          ]
+        },
+        {
+          "name": "LINE-1",
+          "tagType": "UdtType"
+        },
+        {
+          "name": "New Type",
+          "tagType": "UdtType",
+          "typeId": ""
+        },
+        {
+          "dataType": "String",
+          "enabled": true,
+          "name": "Tower",
+          "parameters": {
+            "TowerNumber": {
+              "dataType": "String",
+              "value": ""
+            }
+          },
+          "readOnly": false,
+          "readPermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          },
+          "tagGroup": "Default",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "clampMode": "Clamp_Both",
+              "dataType": "Float4",
+              "enabled": true,
+              "engHigh": 14.0,
+              "engLimitMode": "No_Clamp",
+              "historyEnabled": false,
+              "historyProvider": "DB",
+              "name": "pH",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/pH"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "rawHigh": 14.0,
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "scaleMode": "Off",
+              "scaledHigh": 14.0,
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "alarms": [
+                {
+                  "ackMode": "Auto",
+                  "displayPath": {
+                    "bindType": "Expression",
+                    "value": "\"Tower \"+{TowerNumber}+\" \"+{name}"
+                  },
+                  "mode": "BelowValue",
+                  "name": "Low Alarm",
+                  "setpointA": {
+                    "bindType": "Tag",
+                    "value": "[.]lowSP"
+                  }
+                },
+                {
+                  "ackMode": "Auto",
+                  "displayPath": {
+                    "bindType": "Expression",
+                    "value": "\"Tower \"+{TowerNumber}+\" \"+{name}"
+                  },
+                  "mode": "AboveValue",
+                  "name": "High Alarm",
+                  "setpointA": {
+                    "bindType": "Tag",
+                    "value": "[.]hiSP"
+                  }
+                }
+              ],
+              "dataType": "Float4",
+              "enabled": true,
+              "name": "temp",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/temp"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Int2",
+              "enabled": true,
+              "name": "lowSP",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "value": 10,
+              "valueSource": "memory",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Int2",
+              "enabled": true,
+              "name": "hiSP",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "value": 90,
+              "valueSource": "memory",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "String",
+              "enabled": true,
+              "name": "TowerNumber",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "value": {
+                "bindType": "parameter",
+                "binding": "{TowerNumber}"
+              },
+              "valueSource": "memory",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Int4",
+              "enabled": true,
+              "name": "makeup",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/makeup"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Int4",
+              "enabled": true,
+              "name": "Pumps",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "dataType": "Float4",
+                  "enabled": true,
+                  "name": "chemHOA",
+                  "opcItemPath": {
+                    "bindType": "parameter",
+                    "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/Pumps/chemHOA"
+                  },
+                  "opcServer": "Ignition OPC UA Server",
+                  "readOnly": false,
+                  "readPermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  },
+                  "tagGroup": "Default",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc",
+                  "writePermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  }
+                },
+                {
+                  "dataType": "Float4",
+                  "enabled": true,
+                  "name": "circHOA",
+                  "opcItemPath": {
+                    "bindType": "parameter",
+                    "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/Pumps/circHOA"
+                  },
+                  "opcServer": "Ignition OPC UA Server",
+                  "readOnly": false,
+                  "readPermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  },
+                  "tagGroup": "Default",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc",
+                  "writePermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  }
+                },
+                {
+                  "dataType": "Float4",
+                  "enabled": true,
+                  "name": "bromineHOA",
+                  "opcItemPath": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower1/Pumps/bromineHOA",
+                  "opcServer": "Ignition OPC UA Server",
+                  "readOnly": false,
+                  "readPermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  },
+                  "tagGroup": "Default",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc",
+                  "writePermissions": {
+                    "securityLevels": [],
+                    "type": "AllOf"
+                  }
+                }
+              ],
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Float4",
+              "enabled": true,
+              "name": "mmOH",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/mmOH"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "Float4",
+              "enabled": true,
+              "name": "fanSpeed",
+              "opcItemPath": {
+                "bindType": "parameter",
+                "binding": "[TroubleshootingSimulator]_Meta:Refrigeration/Tower{TowerNumber}/fanSpeed"
+              },
+              "opcServer": "Ignition OPC UA Server",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagGroup": "Default",
+              "tagType": "AtomicTag",
+              "valueSource": "opc",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            }
+          ],
+          "writePermissions": {
+            "securityLevels": [],
+            "type": "AllOf"
+          }
+        },
+        {
+          "name": "OEE",
+          "parameters": {
+            "Asset NO": {
+              "dataType": "Integer",
+              "value": 1
+            }
+          },
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "name": "CycleTime",
+              "tagType": "AtomicTag",
+              "value": 1,
+              "valueSource": "memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataType": "DataSet",
+      "name": "ERP DATA",
+      "tagType": "AtomicTag",
+      "value": "{\"columns\":[{\"name\":\"assembly\",\"type\":\"java.lang.String\"},{\"name\":\"assemblyDesc\",\"type\":\"java.lang.String\"},{\"name\":\"dateLastMoved\",\"type\":\"java.lang.String\"},{\"name\":\"dateReleased\",\"type\":\"java.lang.String\"},{\"name\":\"departmentCode\",\"type\":\"java.lang.String\"},{\"name\":\"firstUnitStartDate\",\"type\":\"java.lang.String\"},{\"name\":\"id\",\"type\":\"java.lang.Integer\"},{\"name\":\"jobCompleted\",\"type\":\"java.lang.String\"},{\"name\":\"jobDescription\",\"type\":\"java.lang.String\"},{\"name\":\"jobStatus\",\"type\":\"java.lang.String\"},{\"name\":\"jobType\",\"type\":\"java.lang.String\"},{\"name\":\"machineName\",\"type\":\"java.lang.String\"},{\"name\":\"nextOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"operationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"previousOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"priorityCreatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"priorityOrder\",\"type\":\"java.lang.Integer\"},{\"name\":\"priorityUpdatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"progressPercentage\",\"type\":\"java.lang.String\"},{\"name\":\"queueComQty\",\"type\":\"java.lang.String\"},{\"name\":\"queueQty\",\"type\":\"java.lang.String\"},{\"name\":\"remainingQty\",\"type\":\"java.lang.String\"},{\"name\":\"resourceCode\",\"type\":\"java.lang.String\"},{\"name\":\"scheduledCompletionDate\",\"type\":\"java.lang.String\"},{\"name\":\"startQuantity\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityId\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityName\",\"type\":\"java.lang.String\"}],\"rows\":[[\"5C2493040\",\"DELIVERY HOUSING LH ASSEMBLY\",\"\",\"14-SEP-23\",\"01120\",\"2023-01-12T18:30:00.000+00:00\",554,\"0\",\"Trial orders requirement for new fixture trial of Project 370 AS PER MAIL Mr.RAJASEKARAN CUB APPROVED WITH PROCESS IE DT:12-SEP-23\",\"Pending\",\"NON-STANDARD\",\"M1485\",\"30\",\"20\",\"10\",\"2024-01-04T08:28:07.30814\",1,\"2024-06-24T10:19:04.3244\",\"55.56\",\"1\",\"4\",\"5\",\"11137\",\"14-SEP-23\",\"5\",\"23021580\",\"25048852\"],[\"5E1590060\",\"INTERMEDIATE FRAME 8\",\"12-OCT-23\",\"08-AUG-23\",\"01120\",\"2023-01-17T18:49:12.000+00:00\",560,\"19\",\"TRIAL FOR INHOUSE TO OSP(DEVP) AS PER MAIL Mr.SARAVANAKUMAR FLATS DT:07-AUG-23\",\"Completed\",\"NON-STANDARD\",\"M1483\",\"50\",\"30\",\"10\",\"2024-01-03T14:26:10.720241\",2,\"2024-06-21T22:24:42.694051\",\"100.00\",\"19\",\"12\",\"12\",\"11147\",\"22-AUG-23\",\"31\",\"22965567\",\"24991217\"],[\"5G0335557\",\"OUTER HOUSING HL LD\",\"\",\"24-JUN-23\",\"01131\",\"2023-01-23T18:30:00.000+00:00\",1320,\"0\",\"ref enclosed - 24.6.23\",\"Completed\",\"NON-STANDARD\",\"M9638\",\"30\",\"10\",\"\",\"2024-01-11T13:35:34.679631\",1,\"2024-06-24T09:35:19.394956\",\"0.16\",\"0\",\"1920\",\"1920\",\"45115\",\"30-JUN-23\",\"1920\",\"22883051\",\"24882231\"],[\"5E1651530\",\"FRONT FLUTTED ROLLER\",\"\",\"01-SEP-23\",\"01116\",\"2023-01-18T18:30:00.000+00:00\",2222,\"0\",\"REWORK ORD FOR AFR NC NO:3391 DT:10-AUG-23 QTY CHANGED 23 TO 24 AS PER Mr.VASANTH SMD\",\"Completed\",\"NON-STANDARD\",\"M1537\",\"30\",\"20\",\"10\",\"2024-01-31T15:03:10.117132\",1,\"2024-06-24T13:59:08.03173\",\"100.00\",\"0\",\"23\",\"24\",\"21125\",\"28-AUG-23\",\"24\",\"22972278\",\"24998786\"],[\"5KB315000305\",\"FEED ROLLER COMPLETE\",\"\",\"14-SEP-23\",\"01116\",\"2023-01-13T18:30:00.000+00:00\",2225,\"0\",\"TRIAL FOR REF DB NO:484 PROD NO:0487 IE ROUTING COMPLETED ON DT:25-MAY-23\",\"Not Started\",\"STANDARD\",\"M1537\",\"20\",\"10\",\"\",\"2024-01-31T15:03:10.119826\",4,\"2024-06-24T13:59:08.035201\",\"0.00\",\"0\",\"24\",\"24\",\"21125\",\"23-SEP-23\",\"24\",\"23023751\",\"25051173\"],[\"9C2MZ004076\",\"SHAFT HEAD 152.013\",\"\",\"10-JAN-24\",\"01211\",\"2024-01-01T02:30:00.000+00:00\",2409,\"0\",\"ORDER FOR Mr.Vijayakumar  S  TPM MAIL DATE ON10.01.2024\",\"Not Started\",\"NON-STANDARD\",\"M2891\",\"\",\"20\",\"10\",\"2024-02-03T08:07:08.199226\",6,\"2024-06-24T08:17:26.426699\",\"0.00\",\"0\",\"1\",\"1\",\"11218\",\"10-JAN-24\",\"1\",\"23226928\",\"25289518\"],[\"5C2100013\",\"SHAFT\",\"19-JAN-24\",\"15-DEC-23\",\"01117\",\"2024-01-29T18:29:00.000+00:00\",2563,\"3\",\"Job Mass Loaded on 10-NOV-2023 11:50:46 (server timezone)PAD QTY CHANGED 20 TO 22 ASKED FOR RM STORE DT16-DEC-23\",\"Not Started\",\"STANDARD\",\"M1779\",\"110\",\"100\",\"70\",\"2024-02-05T11:08:10.795273\",2,\"2024-06-21T22:08:50.641431\",\"0.00\",\"3\",\"18\",\"19\",\"11614\",\"07-MAR-24\",\"22\",\"23139099\",\"25197509\"],[\"5E6131272\",\"END BUSH\",\"26-DEC-23\",\"21-JUN-22\",\"01117\",\"2024-01-01T07:51:00.000+00:00\",2629,\"0\",\"FOR JUN LTE DEVELOPED ITEM MOM WITH ORDER RELEASED BY MONTHLY AS PER Mr.SENTHIL KUMAR DT:22-JAN-2022\",\"Pending\",\"STANDARD\",\"M9623\",\"40\",\"30\",\"20\",\"2024-02-05T11:18:34.418161\",26,\"2024-06-24T15:05:42.692506\",\"0.09\",\"667\",\"495\",\"1200\",\"21429\",\"07-FEB-24\",\"1200\",\"22229863\",\"24194254\"],[\"505158180\",\"RATCHET WHEEL 30T\",\"\",\"13-JAN-24\",\"01117\",\"2024-01-20T18:30:00.000+00:00\",2641,\"0\",\"Job Mass Loaded on 13-JAN-2024 10:55:49 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"20\",\"10\",\"1\",\"2024-02-05T11:19:47.101743\",4,\"2024-03-22T16:01:47.398224\",\"0.00\",\"19\",\"1\",\"20\",\"21133\",\"07-FEB-24\",\"20\",\"23231129\",\"25294059\"],[\"5C2100011\",\"SEALING COVER 50/109,4X9\",\"\",\"14-DEC-23\",\"01117\",\"2024-01-18T18:30:00.000+00:00\",2642,\"0\",\"Job Mass Loaded on 18-NOV-2023 10:19:42 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"30\",\"20\",\"10\",\"2024-02-05T11:19:47.102431\",5,\"2024-03-22T16:01:47.396111\",\"0.00\",\"19\",\"31\",\"50\",\"21133\",\"02-MAR-24\",\"50\",\"23147582\",\"25205944\"],[\"5C2200056\",\"TUBE\",\"\",\"14-NOV-23\",\"01117\",\"2024-01-13T16:32:00.000+00:00\",2651,\"0\",\"Job Mass Loaded on 14-NOV-2023 17:03:26 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"\",\"50\",\"40\",\"2024-02-05T11:19:47.111015\",14,\"2024-03-22T16:01:47.398854\",\"0\",\"0\",\"15\",\"15\",\"21133\",\"20-FEB-24\",\"15\",\"23143281\",\"25201385\"],[\"5C2200056\",\"TUBE\",\"\",\"10-NOV-23\",\"01117\",\"2024-01-13T16:32:00.000+00:00\",2656,\"0\",\"Job Mass Loaded on 10-NOV-2023 09:47:28 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"\",\"50\",\"40\",\"2024-02-05T11:19:47.115862\",19,\"2024-03-22T16:01:47.396817\",\"0\",\"12\",\"3\",\"15\",\"21133\",\"03-FEB-24\",\"15\",\"23136220\",\"25194580\"],[\"5D2500337\",\"SENSOR TIMING WHEEL\",\"12-JUL-23\",\"01-JUN-23\",\"01117\",null,3173,\"6\",\"ECO OMISSION ITEM SPARE DEMAND AVAL DT:31-MAY-23\",\"Not Started\",\"STANDARD\",\"M1078\",\"40\",\"30\",null,\"2024-02-05T13:48:05.862347\",3,\"2024-02-16T14:48:48.567631\",\"0\",\"6\",\"4\",\"4\",\"21131\",\"08-JUN-23\",\"10\",\"22841246\",\"24841610\"],[\"5C2430251\",\"END SHAFT RH\",\"26-AUG-23\",\"18-JUL-23\",\"01117\",null,3174,\"19\",\"Job Mass Loaded on 18-JUL-2023 14:10:22 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.86311\",4,\"2024-02-16T14:48:48.569192\",\"0\",\"19\",\"1\",\"1\",\"21131\",\"07-DEC-23\",\"20\",\"22921512\",\"24922861\"],[\"5F0530016\",\"DRIVE MIDDLE PIECE FOR 1ST ROW (D40, LG 655 MM)\",\"\",\"28-SEP-23\",\"01117\",null,3175,\"0\",\"Job Mass Loaded on 16-SEP-2023 17:03:47 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"55\",\"50\",null,\"2024-02-05T13:48:05.863851\",5,\"2024-02-16T14:48:48.570673\",\"0\",\"0\",\"20\",\"20\",\"21131\",\"19-OCT-23\",\"20\",\"23028846\",\"25056414\"],[\"5E0431460\",\"ECCENTRIC SHAFT- Z\",\"22-NOV-23\",\"04-NOV-23\",\"01117\",null,3176,\"9\",\"Conversion kit demand avl ,Order released requesr by MR.Soundar rajan planning\",\"Not Started\",\"STANDARD\",\"M1078\",\"20\",\"10\",null,\"2024-02-05T13:48:05.864591\",6,\"2024-02-16T14:48:48.627854\",\"0\",\"10\",\"10\",\"11\",\"21131\",\"29-FEB-24\",\"20\",\"23118465\",\"25173254\"],[\"5D4830060\",\"CAN MOTOR PULLEY 74.3\",\"02-FEB-24\",\"07-DEC-23\",\"01117\",null,3177,\"4\",\"Job Mass Loaded on 28-NOV-2023 10:49:55 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.865323\",7,\"2024-02-16T14:48:48.575386\",\"0\",\"7\",\"3\",\"6\",\"21131\",\"03-FEB-24\",\"10\",\"23162291\",\"25222020\"],[\"5D3500151\",\"SLIVER GUIDE RING D30\",\"\",\"07-DEC-23\",\"01117\",null,3178,\"0\",\"Job Mass Loaded on 28-NOV-2023 10:57:39 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.865986\",8,\"2024-02-16T14:48:48.605075\",\"0\",\"0\",\"160\",\"160\",\"21131\",\"07-MAR-24\",\"160\",\"23162624\",\"25222448\"],[\"5D3500151\",\"SLIVER GUIDE RING D30\",\"\",\"06-DEC-23\",\"01117\",null,3179,\"0\",\"Job Mass Loaded on 05-DEC-2023 09:17:03 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.866645\",9,\"2024-02-16T14:48:48.629515\",\"0\",\"0\",\"160\",\"160\",\"21131\",\"13-MAR-24\",\"160\",\"23175643\",\"25235292\"],[\"5D3201090\",\"FRONT ROLLER TENSIONER PULLEY DIA 52\",\"\",\"05-DEC-23\",\"01117\",null,3180,\"0\",\"Job Mass Loaded on 05-DEC-2023 09:17:03 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.867298\",10,\"2024-02-16T14:48:48.576199\",\"0\",\"0\",\"60\",\"60\",\"21131\",\"01-MAR-24\",\"60\",\"23175696\",\"25235299\"]]}",
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "String",
+      "name": "func3",
+      "tagType": "AtomicTag",
+      "value": "TESTING",
+      "valueSource": "memory"
+    },
+    {
+      "name": "Cylindrical",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "GW001",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "M0001",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Part_Count",
+                  "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1019",
+                  "opcServer": "SimulationServer@PT-LP-0053",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "Int4",
+                  "name": "Status_Normalize_tag",
+                  "tagType": "AtomicTag",
+                  "value": 2,
+                  "valueSource": "memory"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "historyEnabled": true,
+      "historyProvider": "COREMYSQLDB",
+      "name": "changetag",
+      "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1016",
+      "opcServer": "SimulationServer@PT-LP-0053",
+      "tagType": "AtomicTag",
+      "valueSource": "opc"
+    },
+    {
+      "name": "Factory1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "line1",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "plc-1",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "UNS",
+                  "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1016",
+                  "opcServer": "SimulationServer@PT-LP-0053",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\t# Get the new value of the tag\n\tvalue \u003d currentValue.value\n\t\n\t# Define a dictionary that maps the numeric value to the corresponding state\n\tstate_map \u003d {\n\t    2: 0,\n\t    3: 1,\n\t    5: 2,\n\t    1: 2,\n\t    4: 2\n\t}\n\t\n\t# Get the corresponding state from the dictionary based on the value\n\tstate \u003d state_map.get(value, \"UNKNOWN\")  # Default to \"UNKNOWN\" if the value isn\u0027t found\n\t\n\t# Write the state to another memory tag (e.g., \"[default]Line1/Status\")\n\tsystem.tag.writeBlocking([\"[default]LMW/U12/Cots_Aprons/Line-1/M0001/Status_Normalize_tag\"], [state])\n\tsystem.tag.writeBlocking([\"[default]Tenant/DEP0657305554e22fa94/CEL0658396916e354fc5/AST052013816c14e41a7/Raw/Status_Normalize_tag\"], [state])"
+            }
+          ],
+          "name": "Status_Tag",
+          "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1018",
+          "opcServer": "SimulationServer@PT-LP-0053",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        }
+      ]
+    },
+    {
+      "name": "CMSTAGS",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "dataType": "Float4",
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "101_A7500",
+          "opcItemPath": "ns\u003d1;s\u003d[MODTCP]101.A7500",
+          "opcServer": "Ignition OPC UA Server",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "101_A7502",
+          "opcItemPath": "ns\u003d1;s\u003d[MODTCP]101.A7502",
+          "opcServer": "Ignition OPC UA Server",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "101_w7548",
+          "opcItemPath": "ns\u003d1;s\u003d[MODTCP]101.w7548",
+          "opcServer": "Ignition OPC UA Server",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "Voltage",
+          "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1003",
+          "opcServer": "SimulationServer@PT-LP-0053",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "101_d7536",
+          "opcItemPath": "ns\u003d1;s\u003d[MODTCP]101.d7536",
+          "opcServer": "Ignition OPC UA Server",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "String",
+          "historyEnabled": true,
+          "historyProvider": "COREMYSQLDB",
+          "name": "FREQ",
+          "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1015",
+          "opcServer": "SimulationServer@PT-LP-0053",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        }
+      ]
+    },
+    {
+      "name": "Tenant",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "DEP0657305554e22fa94",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "CEL0658396916e354fc5",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "AST052013816c14e41a7",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Raw",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "Part_Count",
+                          "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1019",
+                          "opcServer": "SimulationServer@PT-LP-0053",
+                          "tagType": "AtomicTag",
+                          "valueSource": "opc"
+                        },
+                        {
+                          "dataType": "Int4",
+                          "name": "Status_Normalize_tag",
+                          "tagType": "AtomicTag",
+                          "value": 2,
+                          "valueSource": "memory"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataType": "DataSet",
+      "name": "ERP_DATA_NotStarted",
+      "tagType": "AtomicTag",
+      "value": "{\"columns\":[{\"name\":\"assembly\",\"type\":\"java.lang.String\"},{\"name\":\"assemblyDesc\",\"type\":\"java.lang.String\"},{\"name\":\"dateLastMoved\",\"type\":\"java.lang.String\"},{\"name\":\"dateReleased\",\"type\":\"java.lang.String\"},{\"name\":\"departmentCode\",\"type\":\"java.lang.String\"},{\"name\":\"firstUnitStartDate\",\"type\":\"java.lang.String\"},{\"name\":\"id\",\"type\":\"java.lang.Integer\"},{\"name\":\"jobCompleted\",\"type\":\"java.lang.String\"},{\"name\":\"jobDescription\",\"type\":\"java.lang.String\"},{\"name\":\"jobStatus\",\"type\":\"java.lang.String\"},{\"name\":\"jobType\",\"type\":\"java.lang.String\"},{\"name\":\"machineName\",\"type\":\"java.lang.String\"},{\"name\":\"nextOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"operationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"previousOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"priorityCreatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"priorityOrder\",\"type\":\"java.lang.Integer\"},{\"name\":\"priorityUpdatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"progressPercentage\",\"type\":\"java.lang.String\"},{\"name\":\"queueComQty\",\"type\":\"java.lang.String\"},{\"name\":\"queueQty\",\"type\":\"java.lang.String\"},{\"name\":\"remainingQty\",\"type\":\"java.lang.String\"},{\"name\":\"resourceCode\",\"type\":\"java.lang.String\"},{\"name\":\"scheduledCompletionDate\",\"type\":\"java.lang.String\"},{\"name\":\"startQuantity\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityId\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityName\",\"type\":\"java.lang.String\"}],\"rows\":[[\"5KB315000305\",\"FEED ROLLER COMPLETE\",\"\",\"14-SEP-23\",\"01116\",\"2023-01-13T18:30:00.000+00:00\",2225,\"0\",\"TRIAL FOR REF DB NO:484 PROD NO:0487 IE ROUTING COMPLETED ON DT:25-MAY-23\",\"Not Started\",\"STANDARD\",\"M1537\",\"20\",\"10\",\"\",\"2024-01-31T15:03:10.119826\",4,\"2024-06-24T13:59:08.035201\",\"0.00\",\"0\",\"24\",\"24\",\"21125\",\"23-SEP-23\",\"24\",\"23023751\",\"25051173\"],[\"9C2MZ004076\",\"SHAFT HEAD 152.013\",\"\",\"10-JAN-24\",\"01211\",\"2024-01-01T02:30:00.000+00:00\",2409,\"0\",\"ORDER FOR Mr.Vijayakumar  S  TPM MAIL DATE ON10.01.2024\",\"Not Started\",\"NON-STANDARD\",\"M2891\",\"\",\"20\",\"10\",\"2024-02-03T08:07:08.199226\",6,\"2024-06-24T08:17:26.426699\",\"0.00\",\"0\",\"1\",\"1\",\"11218\",\"10-JAN-24\",\"1\",\"23226928\",\"25289518\"],[\"5C2100013\",\"SHAFT\",\"19-JAN-24\",\"15-DEC-23\",\"01117\",\"2024-01-29T18:29:00.000+00:00\",2563,\"3\",\"Job Mass Loaded on 10-NOV-2023 11:50:46 (server timezone)PAD QTY CHANGED 20 TO 22 ASKED FOR RM STORE DT16-DEC-23\",\"Not Started\",\"STANDARD\",\"M1779\",\"110\",\"100\",\"70\",\"2024-02-05T11:08:10.795273\",2,\"2024-06-21T22:08:50.641431\",\"0.00\",\"3\",\"18\",\"19\",\"11614\",\"07-MAR-24\",\"22\",\"23139099\",\"25197509\"],[\"505158180\",\"RATCHET WHEEL 30T\",\"\",\"13-JAN-24\",\"01117\",\"2024-01-20T18:30:00.000+00:00\",2641,\"0\",\"Job Mass Loaded on 13-JAN-2024 10:55:49 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"20\",\"10\",\"1\",\"2024-02-05T11:19:47.101743\",4,\"2024-03-22T16:01:47.398224\",\"0.00\",\"19\",\"1\",\"20\",\"21133\",\"07-FEB-24\",\"20\",\"23231129\",\"25294059\"],[\"5C2100011\",\"SEALING COVER 50/109,4X9\",\"\",\"14-DEC-23\",\"01117\",\"2024-01-18T18:30:00.000+00:00\",2642,\"0\",\"Job Mass Loaded on 18-NOV-2023 10:19:42 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"30\",\"20\",\"10\",\"2024-02-05T11:19:47.102431\",5,\"2024-03-22T16:01:47.396111\",\"0.00\",\"19\",\"31\",\"50\",\"21133\",\"02-MAR-24\",\"50\",\"23147582\",\"25205944\"],[\"5C2200056\",\"TUBE\",\"\",\"14-NOV-23\",\"01117\",\"2024-01-13T16:32:00.000+00:00\",2651,\"0\",\"Job Mass Loaded on 14-NOV-2023 17:03:26 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"\",\"50\",\"40\",\"2024-02-05T11:19:47.111015\",14,\"2024-03-22T16:01:47.398854\",\"0\",\"0\",\"15\",\"15\",\"21133\",\"20-FEB-24\",\"15\",\"23143281\",\"25201385\"],[\"5C2200056\",\"TUBE\",\"\",\"10-NOV-23\",\"01117\",\"2024-01-13T16:32:00.000+00:00\",2656,\"0\",\"Job Mass Loaded on 10-NOV-2023 09:47:28 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1271\",\"\",\"50\",\"40\",\"2024-02-05T11:19:47.115862\",19,\"2024-03-22T16:01:47.396817\",\"0\",\"12\",\"3\",\"15\",\"21133\",\"03-FEB-24\",\"15\",\"23136220\",\"25194580\"],[\"5D2500337\",\"SENSOR TIMING WHEEL\",\"12-JUL-23\",\"01-JUN-23\",\"01117\",null,3173,\"6\",\"ECO OMISSION ITEM SPARE DEMAND AVAL DT:31-MAY-23\",\"Not Started\",\"STANDARD\",\"M1078\",\"40\",\"30\",null,\"2024-02-05T13:48:05.862347\",3,\"2024-02-16T14:48:48.567631\",\"0\",\"6\",\"4\",\"4\",\"21131\",\"08-JUN-23\",\"10\",\"22841246\",\"24841610\"],[\"5C2430251\",\"END SHAFT RH\",\"26-AUG-23\",\"18-JUL-23\",\"01117\",null,3174,\"19\",\"Job Mass Loaded on 18-JUL-2023 14:10:22 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.86311\",4,\"2024-02-16T14:48:48.569192\",\"0\",\"19\",\"1\",\"1\",\"21131\",\"07-DEC-23\",\"20\",\"22921512\",\"24922861\"],[\"5F0530016\",\"DRIVE MIDDLE PIECE FOR 1ST ROW (D40, LG 655 MM)\",\"\",\"28-SEP-23\",\"01117\",null,3175,\"0\",\"Job Mass Loaded on 16-SEP-2023 17:03:47 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"55\",\"50\",null,\"2024-02-05T13:48:05.863851\",5,\"2024-02-16T14:48:48.570673\",\"0\",\"0\",\"20\",\"20\",\"21131\",\"19-OCT-23\",\"20\",\"23028846\",\"25056414\"],[\"5E0431460\",\"ECCENTRIC SHAFT- Z\",\"22-NOV-23\",\"04-NOV-23\",\"01117\",null,3176,\"9\",\"Conversion kit demand avl ,Order released requesr by MR.Soundar rajan planning\",\"Not Started\",\"STANDARD\",\"M1078\",\"20\",\"10\",null,\"2024-02-05T13:48:05.864591\",6,\"2024-02-16T14:48:48.627854\",\"0\",\"10\",\"10\",\"11\",\"21131\",\"29-FEB-24\",\"20\",\"23118465\",\"25173254\"],[\"5D4830060\",\"CAN MOTOR PULLEY 74.3\",\"02-FEB-24\",\"07-DEC-23\",\"01117\",null,3177,\"4\",\"Job Mass Loaded on 28-NOV-2023 10:49:55 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.865323\",7,\"2024-02-16T14:48:48.575386\",\"0\",\"7\",\"3\",\"6\",\"21131\",\"03-FEB-24\",\"10\",\"23162291\",\"25222020\"],[\"5D3500151\",\"SLIVER GUIDE RING D30\",\"\",\"07-DEC-23\",\"01117\",null,3178,\"0\",\"Job Mass Loaded on 28-NOV-2023 10:57:39 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.865986\",8,\"2024-02-16T14:48:48.605075\",\"0\",\"0\",\"160\",\"160\",\"21131\",\"07-MAR-24\",\"160\",\"23162624\",\"25222448\"],[\"5D3500151\",\"SLIVER GUIDE RING D30\",\"\",\"06-DEC-23\",\"01117\",null,3179,\"0\",\"Job Mass Loaded on 05-DEC-2023 09:17:03 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.866645\",9,\"2024-02-16T14:48:48.629515\",\"0\",\"0\",\"160\",\"160\",\"21131\",\"13-MAR-24\",\"160\",\"23175643\",\"25235292\"],[\"5D3201090\",\"FRONT ROLLER TENSIONER PULLEY DIA 52\",\"\",\"05-DEC-23\",\"01117\",null,3180,\"0\",\"Job Mass Loaded on 05-DEC-2023 09:17:03 (server timezone)\",\"Not Started\",\"STANDARD\",\"M1078\",\"30\",\"20\",null,\"2024-02-05T13:48:05.867298\",10,\"2024-02-16T14:48:48.576199\",\"0\",\"0\",\"60\",\"60\",\"21131\",\"01-MAR-24\",\"60\",\"23175696\",\"25235299\"]]}",
+      "valueSource": "memory"
+    },
+    {
+      "name": "Sensor 3",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 12
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "name": "Sensor 9",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 18
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "name": "UNIT1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Cylindrical",
+          "tagType": "Folder"
+        }
+      ]
+    },
+    {
+      "alarms": [
+        {
+          "ackPipeline": "",
+          "activePipeline": "",
+          "clearPipeline": "",
+          "displayPath": "TestingTEMP",
+          "name": "testing",
+          "priority": "Medium",
+          "setpointA": 20.0
+        }
+      ],
+      "historyEnabled": true,
+      "historyProvider": "COREMYSQLDB",
+      "name": "temperature",
+      "opcItemPath": "nsu\u003dhttp://www.prosysopc.com/OPCUA/SimulationNodes/;i\u003d1008",
+      "opcServer": "SimulationServer@PT-LP-0053",
+      "tagType": "AtomicTag",
+      "valueSource": "opc"
+    },
+    {
+      "dataType": "String",
+      "name": "RECIPE",
+      "tagType": "AtomicTag",
+      "value": "TEXTING",
+      "valueSource": "memory"
+    },
+    {
+      "name": "Dashboard",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Light",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "Int4",
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "value": 0,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "String",
+              "name": "Color",
+              "tagType": "AtomicTag",
+              "value": "#0000FF",
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Irrigation",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "String",
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "value": "ONLINE",
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Garage Door",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "String",
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "value": "Closed",
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Weather",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "Forecast",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Day 1",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "dataType": "Float8",
+                      "name": "Humidity",
+                      "tagType": "AtomicTag",
+                      "value": 57.0,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "String",
+                      "name": "Icon",
+                      "tagType": "AtomicTag",
+                      "value": "clear",
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "Float8",
+                      "name": "Temp Low",
+                      "tagType": "AtomicTag",
+                      "value": 69.48,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "Float8",
+                      "name": "Temp",
+                      "tagType": "AtomicTag",
+                      "value": 69.48,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "Float8",
+                      "name": "Wind Degree",
+                      "tagType": "AtomicTag",
+                      "value": 186.0,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "Float8",
+                      "name": "Wind Speed",
+                      "tagType": "AtomicTag",
+                      "value": 1.54,
+                      "valueSource": "memory"
+                    },
+                    {
+                      "dataType": "Float8",
+                      "name": "Temp High",
+                      "tagType": "AtomicTag",
+                      "value": 72.34,
+                      "valueSource": "memory"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "dataType": "String",
+              "name": "Icon",
+              "tagType": "AtomicTag",
+              "value": "clear",
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Temp",
+              "tagType": "AtomicTag",
+              "value": 66.72,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Wind Speed",
+              "tagType": "AtomicTag",
+              "value": 1.74,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Wind Degree",
+              "tagType": "AtomicTag",
+              "value": 151.0,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Temp Low",
+              "tagType": "AtomicTag",
+              "value": 64.0,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Humidity",
+              "tagType": "AtomicTag",
+              "value": 63.0,
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "Temp High",
+              "tagType": "AtomicTag",
+              "value": 69.01,
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Fountain",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "Int4",
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "value": -1,
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Thermostat",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "String",
+              "name": "State",
+              "tagType": "AtomicTag",
+              "value": "cooling",
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Float8",
+              "name": "TempF",
+              "tagType": "AtomicTag",
+              "value": 76.0,
+              "valueSource": "memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sensor 6",
+      "parameters": {
+        "SensorNumber": {
+          "dataType": "Integer",
+          "value": 15
+        }
+      },
+      "tagType": "UdtInstance",
+      "tags": [
+        {
+          "name": "Name",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Highsp",
+          "tagType": "AtomicTag",
+          "value": 75
+        },
+        {
+          "name": "Readingtag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Modetag",
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "Lowsp",
+          "tagType": "AtomicTag"
+        }
+      ],
+      "typeId": "Sensor"
+    },
+    {
+      "dataType": "DataSet",
+      "name": "ERP_DATA_Pending",
+      "tagType": "AtomicTag",
+      "value": "{\"columns\":[{\"name\":\"assembly\",\"type\":\"java.lang.String\"},{\"name\":\"assemblyDesc\",\"type\":\"java.lang.String\"},{\"name\":\"dateLastMoved\",\"type\":\"java.lang.String\"},{\"name\":\"dateReleased\",\"type\":\"java.lang.String\"},{\"name\":\"departmentCode\",\"type\":\"java.lang.String\"},{\"name\":\"firstUnitStartDate\",\"type\":\"java.lang.String\"},{\"name\":\"id\",\"type\":\"java.lang.Integer\"},{\"name\":\"jobCompleted\",\"type\":\"java.lang.String\"},{\"name\":\"jobDescription\",\"type\":\"java.lang.String\"},{\"name\":\"jobStatus\",\"type\":\"java.lang.String\"},{\"name\":\"jobType\",\"type\":\"java.lang.String\"},{\"name\":\"machineName\",\"type\":\"java.lang.String\"},{\"name\":\"nextOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"operationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"previousOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"priorityCreatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"priorityOrder\",\"type\":\"java.lang.Integer\"},{\"name\":\"priorityUpdatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"progressPercentage\",\"type\":\"java.lang.String\"},{\"name\":\"queueComQty\",\"type\":\"java.lang.String\"},{\"name\":\"queueQty\",\"type\":\"java.lang.String\"},{\"name\":\"remainingQty\",\"type\":\"java.lang.String\"},{\"name\":\"resourceCode\",\"type\":\"java.lang.String\"},{\"name\":\"scheduledCompletionDate\",\"type\":\"java.lang.String\"},{\"name\":\"startQuantity\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityId\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityName\",\"type\":\"java.lang.String\"}],\"rows\":[[\"5C2493040\",\"DELIVERY HOUSING LH ASSEMBLY\",\"\",\"14-SEP-23\",\"01120\",\"2023-01-12T18:30:00.000+00:00\",554,\"0\",\"Trial orders requirement for new fixture trial of Project 370 AS PER MAIL Mr.RAJASEKARAN CUB APPROVED WITH PROCESS IE DT:12-SEP-23\",\"Pending\",\"NON-STANDARD\",\"M1485\",\"30\",\"20\",\"10\",\"2024-01-04T08:28:07.30814\",1,\"2024-06-24T10:19:04.3244\",\"55.56\",\"1\",\"4\",\"5\",\"11137\",\"14-SEP-23\",\"5\",\"23021580\",\"25048852\"],[\"5E6131272\",\"END BUSH\",\"26-DEC-23\",\"21-JUN-22\",\"01117\",\"2024-01-01T07:51:00.000+00:00\",2629,\"0\",\"FOR JUN LTE DEVELOPED ITEM MOM WITH ORDER RELEASED BY MONTHLY AS PER Mr.SENTHIL KUMAR DT:22-JAN-2022\",\"Pending\",\"STANDARD\",\"M9623\",\"40\",\"30\",\"20\",\"2024-02-05T11:18:34.418161\",26,\"2024-06-24T15:05:42.692506\",\"0.09\",\"667\",\"495\",\"1200\",\"21429\",\"07-FEB-24\",\"1200\",\"22229863\",\"24194254\"]]}",
+      "valueSource": "memory"
+    },
+    {
+      "name": "Waterdemo",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Exchange",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "WaterPack",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Meta",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "dataType": "String",
+                      "name": "TagGatewayName",
+                      "sourceTagPath": "water-industry-pack",
+                      "tagType": "AtomicTag",
+                      "value": "water-industry-pack",
+                      "valueSource": "memory"
+                    }
+                  ]
+                },
+                {
+                  "name": "Sim",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "dataType": "Boolean",
+                      "name": "Repeat",
+                      "opcItemPath": "ns\u003d1;s\u003d[water-pack-sim][Controls]/repeat",
+                      "opcServer": "Ignition OPC UA Server",
+                      "tagType": "AtomicTag",
+                      "valueSource": "opc"
+                    },
+                    {
+                      "dataType": "Boolean",
+                      "name": "Reset",
+                      "opcItemPath": "ns\u003d1;s\u003d[water-pack-sim][Controls]/reset",
+                      "opcServer": "Ignition OPC UA Server",
+                      "tagType": "AtomicTag",
+                      "valueSource": "opc"
+                    },
+                    {
+                      "name": "Ramp",
+                      "opcItemPath": "ns\u003d1;s\u003d[water-pack-sim][default]Exchange/WaterPack/Sim/Ramper",
+                      "opcServer": "Ignition OPC UA Server",
+                      "tagType": "AtomicTag",
+                      "valueSource": "opc"
+                    },
+                    {
+                      "name": "Program Counter",
+                      "opcItemPath": "ns\u003d1;s\u003d[water-pack-sim][Controls]/programCounter",
+                      "opcServer": "Ignition OPC UA Server",
+                      "tagType": "AtomicTag",
+                      "valueSource": "opc"
+                    }
+                  ]
+                },
+                {
+                  "name": "Demo",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Valves",
+                      "tagType": "Folder"
+                    },
+                    {
+                      "name": "Filters",
+                      "tagType": "Folder"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "erpcheck",
+      "tagType": "AtomicTag",
+      "value": 1,
+      "valueSource": "memory"
+    },
+    {
+      "name": "MQTT Tags",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "PLC 1",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "dataType": "Int4",
+              "name": "Example Tag",
+              "readOnly": false,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagType": "AtomicTag",
+              "value": 1,
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            },
+            {
+              "dataType": "String",
+              "name": "MQTT Quickstart",
+              "readOnly": true,
+              "readPermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              },
+              "tagType": "AtomicTag",
+              "value": "This folder contains tags tied to an MQTT Transmission \u0027Transmitter\u0027 configuration. Any tags added directly under the \u0027MQTT Tags\u0027 folder will be published to the configured MQTT Server. Additional information about how to modify this configuration to represent different tag structures can be found here: https://docs.chariot.io/display/CLD80/MQTT+Transmission+Transmitters+and+Tag+Trees",
+              "writePermissions": {
+                "securityLevels": [],
+                "type": "AllOf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LMW",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "TMD",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "UNIT1",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Cylindrical",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "GW1001",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "name": "M0001",
+                          "tagType": "Folder",
+                          "tags": [
+                            {
+                              "dataType": "Float4",
+                              "datasource": "COREMYSQLDB",
+                              "name": "OEE_Eight_hour",
+                              "query": "SELECT *\r\nFROM mes_oee\r\nWHERE MINUTE(t_stamp) \u003d 0\r\nAND HOUR(t_stamp) IN (0, 8, 16)\r\nORDER BY t_stamp;\r\n",
+                              "tagType": "AtomicTag",
+                              "valueSource": "db"
+                            },
+                            {
+                              "dataType": "Float4",
+                              "datasource": "COREMYSQLDB",
+                              "executionMode": "FixedRate",
+                              "name": "OEE_hourly",
+                              "query": "SELECT oee\r\nFROM mes_oee\r\nWHERE TIME_FORMAT(t_stamp, \u0027%i\u0027) \u003d \u002700\u0027\r\nORDER BY t_stamp DESC\r\nLIMIT 1;\r\n",
+                              "tagType": "AtomicTag",
+                              "valueSource": "db"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataType": "DataSet",
+      "formatString": "#,##0.##",
+      "name": "ERP_DATA_Completed",
+      "tagType": "AtomicTag",
+      "value": "{\"columns\":[{\"name\":\"assembly\",\"type\":\"java.lang.String\"},{\"name\":\"assemblyDesc\",\"type\":\"java.lang.String\"},{\"name\":\"dateLastMoved\",\"type\":\"java.lang.String\"},{\"name\":\"dateReleased\",\"type\":\"java.lang.String\"},{\"name\":\"departmentCode\",\"type\":\"java.lang.String\"},{\"name\":\"firstUnitStartDate\",\"type\":\"java.lang.String\"},{\"name\":\"id\",\"type\":\"java.lang.Integer\"},{\"name\":\"jobCompleted\",\"type\":\"java.lang.String\"},{\"name\":\"jobDescription\",\"type\":\"java.lang.String\"},{\"name\":\"jobStatus\",\"type\":\"java.lang.String\"},{\"name\":\"jobType\",\"type\":\"java.lang.String\"},{\"name\":\"machineName\",\"type\":\"java.lang.String\"},{\"name\":\"nextOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"operationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"previousOperationSeqNum\",\"type\":\"java.lang.String\"},{\"name\":\"priorityCreatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"priorityOrder\",\"type\":\"java.lang.Integer\"},{\"name\":\"priorityUpdatedDate\",\"type\":\"java.lang.String\"},{\"name\":\"progressPercentage\",\"type\":\"java.lang.String\"},{\"name\":\"queueComQty\",\"type\":\"java.lang.String\"},{\"name\":\"queueQty\",\"type\":\"java.lang.String\"},{\"name\":\"remainingQty\",\"type\":\"java.lang.String\"},{\"name\":\"resourceCode\",\"type\":\"java.lang.String\"},{\"name\":\"scheduledCompletionDate\",\"type\":\"java.lang.String\"},{\"name\":\"startQuantity\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityId\",\"type\":\"java.lang.String\"},{\"name\":\"wipEntityName\",\"type\":\"java.lang.String\"}],\"rows\":[[\"5E1590060\",\"INTERMEDIATE FRAME 8\",\"12-OCT-23\",\"08-AUG-23\",\"01120\",\"2023-01-17T18:49:12.000+00:00\",560,\"19\",\"TRIAL FOR INHOUSE TO OSP(DEVP) AS PER MAIL Mr.SARAVANAKUMAR FLATS DT:07-AUG-23\",\"Completed\",\"NON-STANDARD\",\"M1483\",\"50\",\"30\",\"10\",\"2024-01-03T14:26:10.720241\",2,\"2024-06-21T22:24:42.694051\",\"100.00\",\"19\",\"12\",\"12\",\"11147\",\"22-AUG-23\",\"31\",\"22965567\",\"24991217\"],[\"5G0335557\",\"OUTER HOUSING HL LD\",\"\",\"24-JUN-23\",\"01131\",\"2023-01-23T18:30:00.000+00:00\",1320,\"0\",\"ref enclosed - 24.6.23\",\"Completed\",\"NON-STANDARD\",\"M9638\",\"30\",\"10\",\"\",\"2024-01-11T13:35:34.679631\",1,\"2024-06-24T09:35:19.394956\",\"0.16\",\"0\",\"1920\",\"1920\",\"45115\",\"30-JUN-23\",\"1920\",\"22883051\",\"24882231\"],[\"5E1651530\",\"FRONT FLUTTED ROLLER\",\"\",\"01-SEP-23\",\"01116\",\"2023-01-18T18:30:00.000+00:00\",2222,\"0\",\"REWORK ORD FOR AFR NC NO:3391 DT:10-AUG-23 QTY CHANGED 23 TO 24 AS PER Mr.VASANTH SMD\",\"Completed\",\"NON-STANDARD\",\"M1537\",\"30\",\"20\",\"10\",\"2024-01-31T15:03:10.117132\",1,\"2024-06-24T13:59:08.03173\",\"100.00\",\"0\",\"23\",\"24\",\"21125\",\"28-AUG-23\",\"24\",\"22972278\",\"24998786\"]]}",
+      "valueSource": "memory"
+    }
+  ]
+}
